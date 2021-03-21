@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>一个简单的表单</title>
+    <meta charset="urf-8">
+    </head>
+  <body>
+    <form target="blak" action="wellcome .php" method="post"autocomplete="off">
+      <!-- target在新标签打开                                     下面全部关闭自动填充 -->
+    名字：<input type="text" name="name" autofocus><br><br>
+                                          <!-- 光标自动下来 -->
+    性别：<input type="text" name="sex" value="女" disabled><br><br>
+                                      <!-- 默认填充女  dis-指定废了-->
+    邮箱：<input type="text" name="email"autocomplete="on"><br><br>
+                                          <!-- 指定开启 -->
+    邮箱：<input type="text" name="email" value="1236445@qq.com"readonly><br><br>
+                                                              <!-- 指定不可输入 -->
+    <button type="sumit">提交</button>
+    <button type="reset">重写</button>
+  </form>
+
+  </body>
+  </html>
