@@ -1,0 +1,43 @@
+<html>
+  <head>我的表格
+    <style>
+      table {
+        border: 1px soli;
+        border-collapse: collapse;
+      }
+      td {color: cornsilk;
+           /* 字体颜色 */
+      border: 1px solid ;
+      border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+  <table>
+ <colgroup>
+    <col style="background: red;">
+    <!-- 第一列红色 -->
+    <col span="3" style="background:grey">
+    <!-- 后三列灰色 -->
+  </colgroup>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+  </tr>
+  </table>
+  </body>
+  </html>
