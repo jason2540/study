@@ -1,0 +1,18 @@
+<html>
+<head>
+</head>
+<body>
+  <form action="upload.php" method="POST" enctype="multipart/form-data"></form> 
+                                <!-- 上传图片必须是post 加encty -->
+<label>你想看小甲鱼的那个课程：<input type="search" name="search"></label>
+<br><br>
+<label>亲，选个颜色吧：<input type="color" name="color"></label><br><br>
+  <input type="hidden" name="MAX-FILE_SISE" value="1024" >
+            <!-- 指定图片1024以内 其中hidden为影藏 -->
+       请选择一个文件上传:<input type="file" name="file" accept="image/*" multiple><br>
+                                 <!-- accept指定上传什么格式 -- multiple上传多个的意思 -->
+<input type="submit" value="提交"> 
+
+ 
+</body>
+</html>
