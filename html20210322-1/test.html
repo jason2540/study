@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>一个简单的表单</title>
+    <meta charset="urf-8">
+    </head>
+  <body>
+    <form target="blak" action="wellcome .php" method="post"autocomplete="off">
+   <fieldset>
+  <!-- 打边框 -->
+    名字：<input type="text" name="name" autofocus><br><br>
+    性别：<select name="sex">
+        <option value="male">男</option>
+        <option value="female">女</option>
+      </select>
+      <!-- 指定选择男女选项 -->
+    <p>各个历史阶段</p>  
+    朝代：<select>
+      <optgroup label="历史事件中的"></optgroup>
+        <option value="208">三国</option>
+        <option value="321">晋朝</option>
+      <optgroup label="历史沉默中的"></optgroup>
+        <option value="208">宋朝</option>
+        <option value="321">明朝</option>
+        </select>
+  </fieldset>
+  <p>下一步</p>
+  <fieldset>
+    <label for="email">邮箱：</label><input type="text" name="email" id="email"><br><br>
+    <!-- <label for="" 和后缀id=是指定点文字即可出现光标 -->
+    账号：<input type="text" name="email"><br><br>
+  </fieldset>
+    <button type="sumit">提交</button>
+    <button type="reset">重写</button>
+    <input type="submit" value="提交">
+    <!-- 使用<input type="text">与button功效一样 -->
+    <input type="button" onclick="msg()" value="别点我">
+    <!-- 单独设置一个点错程序 -->
+  </form>
+  <script>
+    function msg() {alert("你点错了啊！")};
+  </script>
+  </body>
+  </html>
