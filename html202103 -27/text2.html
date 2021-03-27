@@ -1,0 +1,50 @@
+<html>
+<head>
+<style type="text/css">
+  * {
+    padding: 15px;
+    background: pink;
+  }
+  h1 {
+     text-align: center;}
+  span {
+    color: gray;}
+  img { 
+   width:212px;
+  }
+    .slogan {
+      text-align: center;
+      color: blue;
+    }
+    .content {
+      text-indent: 2em;
+    }
+    #ol {
+      color: red;
+    }
+    body >.content {
+      border: thin blue solid;
+    }
+    /* body空格大于号变成子元素选择器但是不包括子元素的子元素比如p的子元素span 
+    body空格加.content是后代选择器   这样span都有括号了，但是ol没有因为她不是clas=span属性 */
+    h1, p {
+      font-style: italic;
+    }
+    .slogan +p {
+      color: yellow;
+    }
+    /* 相邻选择器 与slogan相邻的元素会被选择  +号改为波浪会都被选择*/
+</style>	
+</head>
+<body>
+  <h1>烈阳天道</h1>
+  <p class="slogan">主宰</p>
+  <p class="content">难道他的肉身，已然堪比婴期有惊人的出声，<span class="content">oh my gad!</span>难以置信。炎阳公主与紫萱也略显苍白.手也是不停地哆嗦了起来，她 从未感觉到如此的压力，内心其实已经又来了一种紧张和兴奋，这种感觉她自己都感觉很奇怪。好像没有什么不好的预感。她<br><br>尽力的想平胡自己的气息，终于稍微安静了下来。随后开始泯然一笑。</p>
+  <p class="content">尽管早有预料，可再次见到徐缺的这种实力，<span id="ol">(来自大众的吐槽)qaq</span>她们心中也是一片战栗。幻妃更是张大了口，</p>
+  <p class="content">难以置信，整片脑袋都是几乎空白的，元婴期七层，怎么可能有这般实力<span>what！！</span>  若是让他再苦修数十年，</p>
+  <p class="content">岂不是，与此同时，天香谷的人也惊了。几名弟子满脸骇然。</p>
+  <img src="14.jpg">
+  <img src="情绪.jpg">
+  
+</body>
+</html>
