@@ -1,0 +1,30 @@
+<html>
+<head>
+  <meta charset="urf-8">
+  <title>使用：：first-line选择器</title>
+  <style type="text/css">
+  /* 请在a元素得前后分别插入文本 */
+    a::before {
+      content:url(嗤之以鼻.gif)
+    }
+    a::after {
+      content:" 欢迎来到诗歌朗诵嘿嘿😄;" 
+    }
+    a {
+      color: pink;
+    }
+    /* 选中选择器  选择会有惊喜的变化哦*/
+    ::selection {
+      background-color: pink;
+      color: blue;
+    }
+    
+	</style>
+</head>
+<body>
+  <div>月是昨日月，明是昨夜明 草合离宫转夕晖，孤云飘泊复何依。<br>
+        山河风景元无异，城郭人民半已非。</div>
+  <p>无风起时别是间，恰似离愁恨时别</p>
+  <a href="https//v.qq.com" target="_blank">哭啊来点我</a>
+</body>
+</html>
