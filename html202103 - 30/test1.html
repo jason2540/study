@@ -1,0 +1,28 @@
+<html>
+  <title>ui伪类选择器</title>
+<head>
+  <meta charset="utf-8">
+  <style type="text/css">
+  /* <!-- 设置表单元素可用于禁用这两种状态的css样式 --> */
+    :enabled {
+      outline:1px solid red;
+    }
+    :disabled {
+      background-color: gray;
+    }
+    </style>
+</head>
+<body> 
+  <form>
+    <p>
+      <label for="enabled">可用</label>
+      <input type="text" name="enabled">
+      <p>
+        <label  for="disabled">禁用：</label>
+        <input type="text" name="disabled" disabled>
+      </p>
+      <button>可用按钮</button>
+      <button disabled>不可用按钮</button>
+  </form>
+</body>
+</html>

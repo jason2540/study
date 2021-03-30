@@ -1,0 +1,24 @@
+<html>
+  <title>ui伪类选择器</title>
+<head>
+  <meta charset="utf-8">
+  <style type="text/css">
+  /* 设置表单元素被选中的样式 */
+  :checked + span {
+    /* 加一个span影响后面的文本元素 */
+   background-color: aqua;
+    color: pink;
+    }
+    </style>
+</head>
+<body> 
+  <form>
+    <input type="radio" name="gender" value="male"><span>男人</span><br>
+    <input type="radio" name="gender" value="female"><span>女人</span><br>
+               <!-- 单选 -->
+    <input type="checkbox" name="r=fruit" value="sugarcane"><span>甘蔗</span><br>
+    <input type="checkbox" name="r=fruit" value="banna"><span>香蕉</span><br>
+                 <!-- 多选 -->
+  </form>
+</body>
+</html>
