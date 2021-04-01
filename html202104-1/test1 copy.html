@@ -1,0 +1,21 @@
+<html>
+  <title>伪类选择器</title>
+<head>
+   <meta charset="utf-8">
+   <style type="text/css">
+    /* <!-- <设置用户输入“在范围内”与“不咋范围内”两种情况的对应样式的css样式> --> */
+    input:in-range {
+      border :2px solid green；
+    }
+    input:out-of-range  {
+      border: 3px solid red;
+    }
+  </style>
+</head>
+<body> 
+  <form>
+    <input type="number" min="1" max="10">
+    <button type="sumit">提交</button>
+    </form>
+</body>
+</html>
