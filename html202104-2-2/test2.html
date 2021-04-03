@@ -1,0 +1,29 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>如何伪类 伪类就是不创建类的前提下实现了创建类的功能</title>
+  <style type="text/css">
+/* 设置第一个p元素的样式用不用伪类的方法 */
+    .first {
+      color: aqua;
+      padding: 10px;
+      }
+      /* 设置第一个p元素用伪类的方法 */
+    p:first-of-type {
+      background-color: red;
+    }
+    /* 设置第二个p李建成元素用伪类的方法 */
+    p:nth-of-type(2) {
+      color: red;
+      background-color: aqua;
+    }
+  </style>
+</head>
+<body> 
+   <span>唐朝</span>
+   <p class="first">李渊</p>
+   <p>李世民</p>
+   <p>李建成</p>
+   <p>李元吉</p>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>如何伪元素 伪元素就是不创建类的前提下实现了创建元素的功能</title>
+  <style type="text/css">
+/* 设置第一个p元素的样式用不用伪元素的方法 */
+    p span {
+      color: aqua;
+      padding: 10px;
+      }
+      /* 设置p元素第一个字用伪元素的方法 */
+    p::first-letter {
+      color: red;
+    }
+  </style>
+</head>
+<body> 
+   <span>唐朝</span>
+   <p >李<span>渊</span></p>
+   <p>李世民</p>
+   <p>李建成</p>
+   <p>李元吉</p>
+</body>
+</html>
