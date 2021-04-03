@@ -1,0 +1,31 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>设置子元素的样式</title>
+  <style type="text/css">
+    html {
+      background: url('14.jpg');
+      padding: 20px;
+    }
+    /* url（）后面加一个no-repeat表示只有一个图片 */
+    p:nth-child(3) {
+      border:2px solid green;
+    }
+    p:nth-of-type(4) {
+      border:2px solid aqua;
+    }
+    /* 只考虑p元素的第四个元素 */
+    p:nth-last-of-type(2) {
+      border: 2px solid red;
+    }
+    /* 设置第三个元素的样式和倒数第二个样式 */
+  </style>
+</head>
+<body> 
+   <span>北宋与西夏</span>
+   <p>李元昊</p>
+   <p>三川口战役</p>
+   <p>1040年进攻宋朝</p>
+   <p>党项族建立的一个王朝</p>
+</body>
+</html>
